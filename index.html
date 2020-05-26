@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<title>BEADOLLNJ</title>
+	<meta content="" name="description">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="width=device-width" name="viewport">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<link href="img/favicon.png" rel="icon" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href="css/bootstrap-light.css" rel="stylesheet">
+	<link id="pagestyle" href="css/theme-light.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body data-offset="50" data-spy="scroll" data-target=".navbar" class="dark-theme">
+	<!-- PRELOADER -->
+	<div class="page-loader">
+		<div class="loader">Loading...</div>
+	</div>
+	<!-- /PRELOADER -->
+	<!-- header -->
+	<nav class="navbar navbar-fixed-top shadow" id="js-nav">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span>
+				</button>
+				
+				<a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="" /> </a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+
+				<ul class="nav navbar-nav">
+					<li><a href="#home">home</a></li>
+					<li><a href="#products">products</a></li>
+					<li><a href="#returns">returns</a></li>
+					<!-- <li><a href="#special">special</a></li> -->
+					<!-- <li><a href="#testimonials">testimonials</a></li> -->
+					<!-- <li><a href="#contact">contact</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--/ End header -->
+	
+	<!-- slider -->
+	<section class="home section image-slider" id="home">
+		<div class="home-slider text-center">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background: url(img/slider/slide1.jpg);">
+					<h2 class="home-slider-title-main">Doll House  & Make Up Bar</h2>
+				</div>
+			</div>
+			<div class="home-pagination"></div>
+			<div class="home-slider-next right-arrow-negative"> <span class="ti-arrow-right"></span> </div>
+			<div class="home-slider-prev left-arrow-negative"> <span class="ti-arrow-left"></span> </div>
+		</div>
+	</section>	
+	<!--/ slider -->
+	
+	<!-- cart section -->
+	<span id="items-counter" class="h3 cart-items-counter" style="display: none">0</span>
+	<div class="cart-widget-container">
+		<div class="cart-widget text-center">
+			<a class="close" id="cart-widget-close">
+				<span class="ti-close"></span>
+			</a>
+			<h1>BeaDollNJ <span class="hglight">shop</span></h1>
+			<h3 class="section-heading">Your cart</h3>
+			<div id="cart-empty" class="cart-empty"><h4>is empty <span class="ti-face-sad icon"></span> </h4></div>
+			<!-- container for js inject cart items content -->
+			<div class="items-container" id="items"></div>
+			<!-- container for js inject cart items content -->
+
+			<div class="cart-delivery" id="cart-delivery">
+				<h4 class="section-heading">Delivery option</h4>
+				<div class="custom-radio">
+					<input id="radio1" type="radio" name="delivery" value="6.70" checked> 
+					<label for="radio1">domestic delivery ($6.70)</label>
+				</div>
+
+				<div class="custom-radio">
+					<input id="radio2" type="radio" name="delivery" value="16.99"> 
+					<label for="radio2">express delivery ($16.99) </label>
+				</div>
+
+			</div>
+			<div class="cart-summary" id="cart-summary">
+				<h4 class="section-heading">summary</h4>
+				<div class="cart-summary-row" id="cart-total">Total products <span class="cart-value">$<span id="cost_value">0.00</span></span></div>
+				<div class="cart-summary-row">Shipping <span class="cart-value">$<span id="cost_delivery"></span></span></div>
+				<div class="cart-summary-row cart-summary-row-total">Total <span class="cart-value">$<span id="total-total"></span></span></div>
+			</div>
+
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="cart-form" id="cart-form">
+				<!-- Identify your business so that you can collect the payments. -->
+				<input type="hidden" name="business" value="vivianlpc83@gmail.com">
+				<!-- Specify a Buy Now button. -->
+				<input type="hidden" name="cmd" value="_xclick">
+				<!-- Specify details about the item that buyers will purchase. -->
+				<input type="hidden" name="item_name" value="Be a Doll NJ shop - checkout">
+				<input type="hidden" name="amount" id="amount" value="">
+				<input type="hidden" name="currency_code" value="USD">
+				<!-- Display the payment button. -->
+				<button type="submit" name="submit" class="btn btn-default btn-lg">
+				pay pal checkout <span class="ti-arrow-right"></span>
+				</button>
+			</form>
+		</div>
+		<div class="cart-widget-close-overlay"></div>
+	</div>
+	<!--/ cart section end -->
+	
+	<!-- Catalog area -->
+	<div class="catalog-area" id="products">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="section-heading">PRODUCT CATEGORIES</h3>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+					<div class="add-area">
+							<a href="#cat_1">
+							<div class="effect-add">
+							
+								<div class="active-cat cat_1">
+								
+								</div>
+								
+								<img class="img-responsive" alt=" " src="img/dollyourselfup_cat.jpg">
+								<h2>Doll Yourself Up</h2>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+					<div class="add-area">
+						<a href="#cat_2">
+							<div class="effect-add">
+							
+								<div class="cat_2"></div>
+							
+								<img class="img-responsive" alt=" " src="img/exclusive_cat.jpg">
+								<h2>Exclusive Doll</h2>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+					<div class="add-area">
+						<a href="#cat_3">
+							<div class="effect-add">
+								<div class="cat_3"></div>
+								<img class="img-responsive" alt=" " src="img/excersiceshapper_cat.jpg">
+								<h2>Exercise Shaper</h2>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+					<div class="add-area">
+						<a href="#cat_4">
+							<div class="effect-add">
+								<div class="cat_4"></div>
+								<img class="img-responsive" alt=" " src="img/smootshapper_cat.jpg">
+								<h2>Smooth Shaper</h2>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ Catalog area -->
+	
+	<!-- Doll Yourself Up -->	
+	<section class="section-min section product">
+		<div class="container overflow-hidden"  id='cat_1'>
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="section-heading">Doll Yourself Up</h3>
+				</div>
+				<div class="col-md-12">
+					<div class="product-list-sliderd">
+						<ul class="swiper-wrappers product-list product-list-vertical">
+							<li class="swiper-slidess text-center"> 
+								<span class="product-list-left pull-left">
+							    	<!-- <span class="sale-p">sale</span> -->
+									<a href="#" data-target="#DollYourSelfUp-01" data-toggle="modal">
+										<img alt="product image" class="product-list-primary-img" src="img/cat_1_2.jpg"> 
+									</a>
+								</span> 
+
+								<a href="#" data-target="#DollYourSelfUp-01" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">Breast Lift Pasties</span>
+										<span class="product-list-price">$12.99</span>
+									</span>
+								</a> 
+
+								<button class="btn btn-default add-item" 
+									type="button" 
+									data-image="img/cat_1_2.jpg" 
+									data-name="Breast Lift Pasties" 
+									data-cost="12.99" data-id="1" >
+									add to cart
+								</button> 		
+							</li>
+							
+							<li class="swiper-slidess text-center"> 
+								<span class="product-list-left pull-left">
+									<a href="#" data-target="#DollYourSelfUp-02" data-toggle="modal">
+									<img alt="product image" class="product-list-primary-img" src="img/cat_1_3.jpg"> 
+									</a>
+								</span> 
+
+								<a href="#" data-target="#DollYourSelfUp-02" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">Disposable Breast Petals</span>
+										<span class="product-list-price">$6.99</span>
+									</span>
+								</a>
+
+								<button class="btn btn-default add-item" 
+									type="button" 
+									data-image="img/cat_1_3.jpg" 
+									data-name="Disposable Breast Petals" 
+									data-cost="6.99" data-id="2" >
+									add to cart
+								</button> 	
+							</li>
+
+							<li class="swiper-slidess text-center"> 
+								<span class="product-list-left pull-left">
+							    	<!-- <span class="sale-p new-p">new</span> -->
+									<a href="#" data-target="#DollYourSelfUp-03" data-toggle="modal">
+									<img alt="product image" class="product-list-primary-img" src="img/cat_1_4.jpg"> 
+									</a>
+								</span> 
+
+								<a href="#" data-target="#DollYourSelfUp-03" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">Lace Up Push Up Bra</span>
+										<span class="product-list-price">$14.99</span>
+									</span>
+								</a> 
+
+								<button class="btn btn-default add-item" 
+									type="button" 
+									data-image="img/cat_1_4.jpg" 
+									data-name="DISPOSABLE BREAST PETALS" 
+									data-cost="14.99" data-id="3" >
+									add to cart
+								</button> 		
+							</li>
+							
+							<li class="swiper-slidess  text-center" > 
+								<span class="product-list-left pull-left">
+									<a href="#" data-target="#DollYourSelfUp-04" data-toggle="modal">
+									<img alt="product image" class="product-list-secondary-img" src="img/cat_1_5.jpg">
+									</a>
+								</span> 
+
+								<a href="#" data-target="#DollYourSelfUp-04" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">Reusable Silicone Backless Strapless Bra</span>
+										<span class="product-list-price">$19.99</span>
+									</span>
+								</a>
+
+								<button class="btn btn-default add-item"
+										type="button" 
+										data-image="img/cat_1_5.jpg" 
+										data-name="Reusable Silicone Backless Strapless Bra" 
+										data-cost="19.99" 
+										data-id="4" >
+									add to cart
+								</button> 	
+							</li>
+
+							<li class="swiper-slidess text-center"> 
+								<span class="product-list-left pull-left">
+								    <!-- <span class="sale-p">sale</span> -->
+									<a href="#" data-target="#DollYourSelfUp-05" data-toggle="modal">
+									<img alt="product image" class="product-list-secondary-img" src="img/cat_1_6.jpg">
+									</a>
+								</span> 
+
+								<a href="#" data-target="#DollYourSelfUp-05" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">Simple Solution For A Quick And Effective Enhancement</span>
+										<span class="product-list-price">$12.99</span>
+										<!-- <span class="product-list-price sell-p"><del>$700.00</del></span> -->
+									</span>
+								</a> 
+
+								<button class="btn btn-default add-item" 
+										type="button" 
+										data-image="img/cat_1_6.jpg"
+										data-name="Simple Solution For A Quick And Effective Enhancement"
+										data-cost="12.99"
+										data-id="5" >
+									add to cart
+								</button> 		
+							</li>
+							
+							<li class="swiper-slidess text-center"> 
+								<span class="product-list-left pull-left">
+									<a href="#" data-target="#DollYourSelfUp-06" data-toggle="modal">
+									<img alt="product image" class="product-list-secondary-img" src="img/cat_1_7.jpg">
+									</a>
+								</span> 
+
+								<a href="#" data-target="#DollYourSelfUp-06" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">Eyelash Adhesive</span>
+										<span class="product-list-price">$4.99</span>
+									</span>
+								</a>
+
+								<button class="btn btn-default add-item"
+										type="button" 
+										data-image="img/cat_1_7.jpg"
+										data-name="Eyelash Adhesive" 
+										data-cost="4.99" 
+										data-id="6" >
+									add to cart
+								</button> 	
+							</li>
+						</ul>
+					</div>				
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="container overflow-hidden"  id='cat_2'>
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="section-heading">Exclusive Doll</h3>
+				</div>
+				<div class="col-md-12">
+					<div class="product-list-sliderd">
+						<ul class="swiper-wrappers product-list product-list-vertical">
+							<li class="swiper-slidess text-center"> 
+								<span class="product-list-left pull-left">
+							    	<!-- <span class="sale-p">sale</span> -->
+									<a href="#" data-target="#exclusive-01" data-toggle="modal">
+										<img alt="product image" class="product-list-primary-img" src="img/exclusiveDoll/exclusive_cat_2_1_1.jpg"> 
+									</a>
+								</span> 
+
+								<a href="#" data-target="#exclusive-01" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">C+ Multi Serum</span>
+										<span class="product-list-price">$34.99</span>
+									</span>
+								</a> 
+
+								<button class="btn btn-default add-item" 
+									type="button" 
+									data-image="img/exclusiveDoll/exclusive_cat_2_1_1.jpg" 
+									data-name="C+ Multi Serum" 
+									data-cost="34.99" data-id="1" >
+									add to cart
+								</button> 		
+							</li>
+							
+							<li class="swiper-slidess text-center"> 
+								<span class="product-list-left pull-left">
+									<a href="#" data-target="#exclusive-02" data-toggle="modal">
+									<img alt="product image" class="product-list-primary-img" src="img/exclusiveDoll/exclusive_cat_2_2_1.jpg"> 
+									</a>
+								</span> 
+
+								<a href="#" data-target="#exclusive-02" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">Eye Brow Rich Cream</span>
+										<span class="product-list-price">$21.99</span>
+									</span>
+								</a>
+
+								<button class="btn btn-default add-item" 
+									type="button" 
+									data-image="img/exclusiveDoll/exclusive_cat_2_2_1.jpg" 
+									data-name="Eye Brow Rich Cream" 
+									data-cost="21.99" data-id="2" >
+									add to cart
+								</button> 	
+							</li>
+
+							<li class="swiper-slidess text-center"> 
+								<span class="product-list-left pull-left">
+							    	<!-- <span class="sale-p new-p">new</span> -->
+									<a href="#" data-target="#exclusive-03" data-toggle="modal">
+									<img alt="product image" class="product-list-primary-img" src="img/exclusiveDoll/exclusive_cat_2_3_1.jpg"> 
+									</a>
+								</span> 
+
+								<a href="#" data-target="#exclusive-03" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">Eyelash Growth Serum</span>
+										<span class="product-list-price">$19.99</span>
+									</span>
+								</a> 
+
+								<button class="btn btn-default add-item" 
+									type="button" 
+									data-image="img/exclusiveDoll/exclusive_cat_2_3_1.jpg" 
+									data-name="Eyelash Growth Serum" 
+									data-cost="14.99" data-id="3" >
+									add to cart
+								</button> 		
+							</li>
+							
+							<li class="swiper-slidess  text-center" > 
+								<span class="product-list-left pull-left">
+									<a href="#" data-target="#exclusive-04" data-toggle="modal">
+									<img alt="product image" class="product-list-secondary-img" src="img/exclusiveDoll/exclusive_cat_2_4_1.jpg">
+									</a>
+								</span> 
+
+								<a href="#" data-target="#exclusive-04" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">Snail Hydrogel Eye Patch</span>
+										<span class="product-list-price">$9.99</span>
+									</span>
+								</a>
+
+								<button class="btn btn-default add-item"
+										type="button" 
+										data-image="img/exclusiveDoll/exclusive_cat_2_4_1.jpg" 
+										data-name="Snail Hydrogel Eye Patch" 
+										data-cost="9.99" 
+										data-id="4" >
+									add to cart
+								</button> 	
+							</li>
+
+							<li class="swiper-slidess  text-center" > 
+								<span class="product-list-left pull-left">
+									<a href="#" data-target="#exclusive-05" data-toggle="modal">
+									<img alt="product image" class="product-list-secondary-img" src="img/exclusiveDoll/exclusive_cat_2_5_1.jpg">
+									</a>
+								</span> 
+
+								<a href="#" data-target="#exclusive-05" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">Face Mask</span>
+										<span class="product-list-price">$5.00</span>
+									</span>
+								</a>
+
+								<button class="btn btn-default add-item"
+										type="button" 
+										data-image="img/exclusiveDoll/exclusive_cat_2_5_1.jpg" 
+										data-name="Face Mask" 
+										data-cost="5.00" 
+										data-id="4" >
+									add to cart
+								</button> 	
+							</li>
+						</ul>
+					</div>				
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="container overflow-hidden"  id='cat_3'>
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="section-heading">EXERCISE SHAPER</h3>
+				</div>
+				<div class="col-md-12">
+					<div class="product-list-sliderd">
+						<ul class="swiper-wrappers product-list product-list-vertical">
+							<li class="swiper-slidess text-center"> 
+								<span class="product-list-left pull-left">
+							    	<!-- <span class="sale-p">sale</span> -->
+									<a href="#" data-target="#exercise-01" data-toggle="modal">
+										<img alt="product image" class="product-list-primary-img" src="img/exerciseDoll/excersiceshapper_cat_3_1_1.jpg"> 
+									</a>
+								</span> 
+
+								<a href="#" data-target="#exercise-01" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">Slimming Body Shaper Belt</span>
+										<span class="product-list-price">$39.99</span>
+									</span>
+								</a> 
+
+								<button class="btn btn-default add-item" 
+									type="button" 
+									data-image="img/exerciseDoll/excersiceshapper_cat_3_1_1.jpg" 
+									data-name="Slimming Body Shaper Belt" 
+									data-cost="39.99" data-id="1" >
+									add to cart
+								</button> 		
+							</li>
+							
+							<li class="swiper-slidess text-center"> 
+								<span class="product-list-left pull-left">
+									<a href="#" data-target="#exercise-02" data-toggle="modal">
+									<img alt="product image" class="product-list-primary-img" src="img/exerciseDoll/excersiceshapper_cat_3_2_1.jpg"> 
+									</a>
+								</span> 
+
+								<a href="#" data-target="#exercise-02" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">Waist Trainer Belt For Weight Loss</span>
+										<span class="product-list-price">$29.99</span>
+									</span>
+								</a>
+
+								<button class="btn btn-default add-item" 
+									type="button" 
+									data-image="img/exerciseDoll/excersiceshapper_cat_3_2_1.jpg" 
+									data-name="Waist Trainer Belt For Weight Loss" 
+									data-cost="29.99" data-id="2" >
+									add to cart
+								</button> 	
+							</li>
+						</ul>
+					</div>				
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="container overflow-hidden"  id='cat_4'>
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="section-heading">SMOOTH SHAPER</h3>
+				</div>
+				<div class="col-md-12">
+					<div class="product-list-sliderd">
+						<ul class="swiper-wrappers product-list product-list-vertical">
+							<li class="swiper-slidess text-center"> 
+								<span class="product-list-left pull-left">
+							    	<!-- <span class="sale-p">sale</span> -->
+									<a href="#" data-target="#smooth-01" data-toggle="modal">
+										<img alt="product image" class="product-list-primary-img" src="img/shapperDoll/smootshapper_cat_4_1_1.jpg"> 
+									</a>
+								</span> 
+
+								<a href="#" data-target="#smooth-01" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">Full Body Seamless Bodysuit</span>
+										<span class="product-list-price">$24.99</span>
+									</span>
+								</a> 
+
+								<button class="btn btn-default add-item" 
+									type="button" 
+									data-image="img/shapperDoll/smootshapper_cat_4_1_1.jpg" 
+									data-name="Full Body Seamless Bodysuit" 
+									data-cost="24.99" data-id="1" >
+									add to cart
+								</button> 		
+							</li>
+							
+							<li class="swiper-slidess text-center"> 
+								<span class="product-list-left pull-left">
+									<a href="#" data-target="#smooth-02" data-toggle="modal">
+									<img alt="product image" class="product-list-primary-img" src="img/shapperDoll/smootshapper_cat_4_2_1.jpg"> 
+									</a>
+								</span> 
+
+								<a href="#" data-target="#smooth-02" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">Seamless Shaping Thong | Open Bust</span>
+										<span class="product-list-price">$19.99</span>
+									</span>
+								</a>
+
+								<button class="btn btn-default add-item" 
+									type="button" 
+									data-image="img/shapperDoll/smootshapper_cat_4_2_1.jpg" 
+									data-name="Seamless Shaping Thong | Open Bust" 
+									data-cost="19.99" data-id="2" >
+									add to cart
+								</button> 	
+							</li>
+
+							<li class="swiper-slidess text-center"> 
+								<span class="product-list-left pull-left">
+							    	<!-- <span class="sale-p new-p">new</span> -->
+									<a href="#" data-target="#smooth-03" data-toggle="modal">
+									<img alt="product image" class="product-list-primary-img" src="img/shapperDoll/smootshapper_cat_4_3_1.jpg"> 
+									</a>
+								</span> 
+
+								<a href="#" data-target="#smooth-03" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">Slimming Level | High Targets Tummy</span>
+										<span class="product-list-price">$29.99</span>
+									</span>
+								</a> 
+
+								<button class="btn btn-default add-item" 
+									type="button" 
+									data-image="img/shapperDoll/smootshapper_cat_4_3_1.jpg" 
+									data-name="Slimming Level | High Targets Tummy" 
+									data-cost="29.99" data-id="3" >
+									add to cart
+								</button> 		
+							</li>
+							
+							<li class="swiper-slidess  text-center" > 
+								<span class="product-list-left pull-left">
+									<a href="#" data-target="#smooth-04" data-toggle="modal">
+									<img alt="product image" class="product-list-secondary-img" src="img/shapperDoll/smootshapper_cat_4_4_1.jpg">
+									</a>
+								</span> 
+
+								<a href="#" data-target="#smooth-04" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">High Control With All Day Comfort</span>
+										<span class="product-list-price">$34.99</span>
+									</span>
+								</a>
+
+								<button class="btn btn-default add-item"
+										type="button" 
+										data-image="img/shapperDoll/smootshapper_cat_4_4_1.jpg" 
+										data-name="High Control With All Day Comfort" 
+										data-cost="34.99" 
+										data-id="4" >
+									add to cart
+								</button> 	
+							</li>
+
+							<li class="swiper-slidess text-center"> 
+								<span class="product-list-left pull-left">
+								    <!-- <span class="sale-p">sale</span> -->
+									<a href="#" data-target="#smooth-05" data-toggle="modal">
+									<img alt="product image" class="product-list-secondary-img" src="img/shapperDoll/smootshapper_cat_4_5_1.jpg">
+									</a>
+								</span> 
+
+								<a href="#" data-target="#smooth-05" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color">Slimming Body Suit</span>
+										<span class="product-list-price">$19.99</span>
+										<!-- <span class="product-list-price sell-p"><del>$700.00</del></span> -->
+									</span>
+								</a> 
+
+								<button class="btn btn-default add-item" 
+										type="button" 
+										data-image="img/shapperDoll/smootshapper_cat_4_5_1.jpg"
+										data-name="Slimming Body Suit"
+										data-cost="19.99"
+										data-id="5" >
+									add to cart
+								</button> 		
+							</li>
+						</ul>
+					</div>				
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		<!-- DOLL YOURSELF UP -->
+		<div class="modal fade product-modal" id="DollYourSelfUp-01" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="product-carousel_1">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/DollYourSelfUp/cat_1_2.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/DollYourSelfUp/cat_1_2_1.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/DollYourSelfUp/cat_1_2_2.jpg" title=""> </div>
+							</div>
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#product-carousel_1"> <img alt="" src="img/DollYourSelfUp/cat_1_2.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#product-carousel_1"> <img alt="" src="img/DollYourSelfUp/cat_1_2_1.jpg"> </li>
+								<li class="" data-slide-to="2" data-target="#product-carousel_1"> <img alt="" src="img/DollYourSelfUp/cat_1_2_2.jpg"> </li>
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">Breast Lift Pasties</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$12.99</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" data-image="img/DollYourSelfUp/cat_1_2.jpg" 
+												data-name="Breast Lift Pasties" 
+												data-cost="12.99" 
+												data-id="1">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p>invisible Silicone Breast Lifting Petals</p>
+									<p>Reusable</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade product-modal" id="DollYourSelfUp-02" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="product-carousel_2">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/DollYourSelfUp/cat_1_3.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/DollYourSelfUp/cat_1_3_1.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/DollYourSelfUp/cat_1_3_2.jpg" title=""> </div>
+							</div>
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#product-carousel_2"> <img alt="" src="img/DollYourSelfUp/cat_1_3.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#product-carousel_2"> <img alt="" src="img/DollYourSelfUp/cat_1_3_1.jpg"> </li>
+								<li class="" data-slide-to="2" data-target="#product-carousel_2"> <img alt="" src="img/DollYourSelfUp/cat_1_3_2.jpg"> </li>
+				
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">Disposable Breast Petals</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$6.99</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" 
+												data-image="img/DollYourSelfUp/cat_1_3.jpg" 
+												data-name="Disposable Breast Petals" 
+												data-cost="6.99" 
+												data-id="2">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p>3 Pair Pack</p>
+									<p>100% Nylon Tricot With Hypoallergenic Medical Adhesive</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade product-modal" id="DollYourSelfUp-03" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="product-carousel_3">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/DollYourSelfUp/cat_1_4.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/DollYourSelfUp/cat_1_4_1.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/DollYourSelfUp/cat_1_4_2.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/DollYourSelfUp/cat_1_4_3.jpg" title=""> </div>
+							</div>
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#product-carousel_3"> <img alt="" src="img/DollYourSelfUp/cat_1_4.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#product-carousel_3"> <img alt="" src="img/DollYourSelfUp/cat_1_4_1.jpg"> </li>
+								<li class="" data-slide-to="2" data-target="#product-carousel_3"> <img alt="" src="img/DollYourSelfUp/cat_1_4_2.jpg"> </li>
+								<li class="" data-slide-to="3" data-target="#product-carousel_3"> <img alt="" src="img/DollYourSelfUp/cat_1_4_3.jpg"> </li>
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">Lace Up Push Up Bra</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$14.99</span>
+												<button 
+													class="btn btn-default add-item" 
+													type="button" 
+													data-image="img/DollYourSelfUp/cat_1_4.jpg" 
+													data-name="Lace Up Push Up Bra" 
+													data-cost="14.99" data-id="3">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p>Adhesive Bra Strapless</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade product-modal" id="DollYourSelfUp-04" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="product-carousel_4">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/DollYourSelfUp/cat_1_5.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/DollYourSelfUp/cat_1_5_1.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/DollYourSelfUp/cat_1_5_2.jpg" title=""> </div>
+								
+							</div>
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#product-carousel_4"> <img alt="" src="img/DollYourSelfUp/cat_1_5.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#product-carousel_4"> <img alt="" src="img/DollYourSelfUp/cat_1_5_1.jpg"> </li>
+								<li class="" data-slide-to="2" data-target="#product-carousel_4"> <img alt="" src="img/DollYourSelfUp/cat_1_5_2.jpg"> </li>
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">Reusable Silicone Backless Strapless Bra</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$19.99</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" 
+												data-image="img/DollYourSelfUp/cat_1_5.jpg" 
+												data-name="Reusable Silicone Backless Strapless Bra"
+												data-cost="19.99" 
+												data-id="4">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p>Can Be Wown Up To 25 Times</p>
+									<p>(Cup Sizes A-B-C)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade product-modal" id="DollYourSelfUp-05" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="product-carousel_5">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/DollYourSelfUp/cat_1_6.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/DollYourSelfUp/cat_1_6_1.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/DollYourSelfUp/cat_1_6_2.jpg" title=""> </div>
+							
+							</div>
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#product-carousel_5"> <img alt="" src="img/DollYourSelfUp/cat_1_6.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#product-carousel_5"> <img alt="" src="img/DollYourSelfUp/cat_1_6_1.jpg"> </li>
+								<li class="" data-slide-to="2" data-target="#product-carousel_5"> <img alt="" src="img/DollYourSelfUp/cat_1_6_2.jpg"> </li>
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">Simple Solution For A Quick And Effective Enhancement</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$12.99</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" 
+												data-image="img/DollYourSelfUp/cat_1_6.jpg" 
+												data-name="Simple Solution For A Quick And Effective Enhancement" 
+												data-cost="12.99" 
+												data-id="5">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p>Cut Your Size</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade product-modal" id="DollYourSelfUp-06" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="product-carousel_6">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/DollYourSelfUp/cat_1_7.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/DollYourSelfUp/cat_1_7_1.jpg" title=""> </div>
+
+							</div>
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#product-carousel_6"> <img alt="" src="img/DollYourSelfUp/cat_1_7.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#product-carousel_6"> <img alt="" src="img/DollYourSelfUp/cat_1_7_1.jpg"> </li>
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">Eyelash Adhesive</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$4.99</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" 
+												data-image="img/DollYourSelfUp/cat_1_7.jpg" 
+												data-name="Eyelash Adhesive" 
+												data-cost="4.99" 
+												data-id="6">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p>With Easy Apply Application</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+		<!-- / DOLL YOURSELF UPL -->
+
+		<!--EXCLUSIVE DOLL-->
+		
+		<div class="modal fade product-modal" id="exclusive-01" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="exclusive-carousel_1">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_1_1.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_1_2.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_1_3.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_1_4.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_1_5.jpg" title=""> </div>
+							</div>
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#exclusive-carousel_1"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_1_1.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#exclusive-carousel_1"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_1_2.jpg"> </li>
+								<li class="" data-slide-to="2" data-target="#exclusive-carousel_1"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_1_3.jpg"> </li>
+								<li class="" data-slide-to="3" data-target="#exclusive-carousel_1"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_1_4.jpg"> </li>
+								<li class="" data-slide-to="4" data-target="#exclusive-carousel_1"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_1_5.jpg"> </li>
+
+
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">C+ Multi Serum</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$34.99</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" data-image="img/exclusiveDoll/exclusive_cat_2_1_1.jpg" 
+												data-name="C+ Multi Serum" 
+												data-cost="34.99" 
+												data-id="1">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p>Anti Aging Wrinkle, Skin Whitening, Brightening Facial Serum</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade product-modal" id="exclusive-02" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="exclusive-carousel_2">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_2_1.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_2_2.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_2_3.jpg" title=""> </div>
+
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#exclusive-carousel_2"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_2_1.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#exclusive-carousel_2"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_2_2.jpg"> </li>
+								<li class="" data-slide-to="2" data-target="#exclusive-carousel_2"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_2_3.jpg"> </li>
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">Eye Brow Rich Cream</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$21.99</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" data-image="img/exclusiveDoll/exclusive_cat_2_2_1.jpg" 
+												data-name="Eye Brow Rich Cream" 
+												data-cost="21.99" 
+												data-id="2">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p style="text-align: left;">THIS INTENSIVE SNAIL HYDROGEL CONTAINS 10.000 PPM OF SNAILS SECRETION FILTRATE THAT WILL BRIGHTEN, NOURISH AND FIRM THE EYE ORBITAL AREA FOR FRESH AND DEWY GLOW</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="modal fade product-modal" id="exclusive-03" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="exclusive-carousel_3">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_3_1.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_3_2.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_3_3.jpg" title=""> </div>
+
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#exclusive-carousel_3"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_3_1.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#exclusive-carousel_3"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_3_2.jpg"> </li>
+								<li class="" data-slide-to="2" data-target="#exclusive-carousel_3"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_3_3.jpg"> </li>
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">Eyelash Growth Serum</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$19.99</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" data-image="img/exclusiveDoll/exclusive_cat_2_3_1.jpg" 
+												data-name="C+ Multi Serum" 
+												data-cost="19.99" 
+												data-id="3">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p style="text-align: left;">FOR HEALTHY AND VOLUMINOUS  EYELASHES 
+										SERUM MAKE YOUR EYELASH MORE LONGER AND VOLUMINOUS IN 4 WEEKS GUARANTEED BY CLINICAL TEST.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="modal fade product-modal" id="exclusive-04" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="exclusive-carousel_4">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_4_1.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_4_2.jpg" title=""> </div>
+
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#exclusive-carousel_4"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_4_1.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#exclusive-carousel_4"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_4_2.jpg"> </li>
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">Snail Hydrogel Eye Patch</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$9.99</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" data-image="img/exclusiveDoll/exclusive_cat_2_4_1.jpg" 
+												data-name="Snail Hydrogel Eye Patch" 
+												data-cost="9.99" 
+												data-id="4">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p style="text-align: left;">FOR HEALTHY AND VOLUMINOUS  EYELASHES 
+										SERUM MAKE YOUR EYELASH MORE LONGER AND VOLUMINOUS IN 4 WEEKS GUARANTEED BY CLINICAL TEST.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="modal fade product-modal" id="exclusive-05" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="exclusive-carousel_5">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_5_1.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_5_2.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_5_3.jpg" title=""> </div>
+
+
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#exclusive-carousel_5"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_5_1.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#exclusive-carousel_5"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_5_2.jpg"> </li>
+								<li class="" data-slide-to="2" data-target="#exclusive-carousel_5"> <img alt="" src="img/exclusiveDoll/exclusive_cat_2_5_3.jpg"> </li>
+
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">Face Mask</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$5.00</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" data-image="img/exclusiveDoll/exclusive_cat_2_5_1.jpg" 
+												data-name="Face Mask" 
+												data-cost="5.00" 
+												data-id="5">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p style="text-align: left;">Washable and Reusable</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- / EXCLUSIVE DOLL -->
+
+		<!-- EXERCISE SHAPER -->
+		<div class="modal fade product-modal" id="exercise-01" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="exercise-carousel_1">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_1_1.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_1_2.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_1_3.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_1_4.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_1_5.jpg" title=""> </div>
+
+							</div>
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#exercise-carousel_1"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_1_1.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#exercise-carousel_1"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_1_2.jpg"> </li>
+								<li class="" data-slide-to="2" data-target="#exercise-carousel_1"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_1_3.jpg"> </li>
+								<li class="" data-slide-to="3" data-target="#exercise-carousel_1"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_1_4.jpg"> </li>
+								<li class="" data-slide-to="4" data-target="#exercise-carousel_1"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_1_5.jpg"> </li>
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">Slimming Body Shaper Belt</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$39.99</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" data-image="img/exerciseDoll/excersiceshapper_cat_3_1_1.jpg" 
+												data-name="Slimming Body Shaper Belt" 
+												data-cost="39.99" 
+												data-id="1">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p>BACK SUPPORT GIRDLE BELT</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade product-modal" id="exercise-02" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="exercise-carousel_2">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_2_1.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_2_2.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_2_3.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_2_4.jpg" title=""> </div>
+							</div>
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#exercise-carousel_2"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_2_1.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#exercise-carousel_2"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_2_2.jpg"> </li>
+								<li class="" data-slide-to="2" data-target="#exercise-carousel_2"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_2_3.jpg"> </li>
+								<li class="" data-slide-to="3" data-target="#exercise-carousel_2"> <img alt="" src="img/exerciseDoll/excersiceshapper_cat_3_2_4.jpg"> </li>
+
+				
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">Waist Trainer Belt For Weight Loss</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$29.99</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" 
+												data-image="img/exerciseDoll/excersiceshapper_cat_3_2_1.jpg" 
+												data-name="Disposable Breast Petals" 
+												data-cost="29.99" 
+												data-id="2">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p>LOW BACK AND LUMBAR SUPPORT WITH SAUNA SUIT EFFECT</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /  EXERCISE SHAPER-->
+		
+		<!-- SMOOTH SHAPER-->
+		<div class="modal fade product-modal" id="smooth-01" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="smooth-carousel_1">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_1_1.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_1_2.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_1_3.jpg" title=""> </div>
+
+							</div>
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#smooth-carousel_1"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_1_1.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#smooth-carousel_1"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_1_2.jpg"> </li>
+								<li class="" data-slide-to="2" data-target="#smooth-carousel_1"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_1_3.jpg"> </li>
+
+				
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">Full Body Seamless Bodysuit</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$24.99</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" 
+												data-image="img/shapperDoll/smootshapper_cat_4_1_1.jpg" 
+												data-name="Full Body Seamless Bodysuit" 
+												data-cost="24.99" 
+												data-id="2">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p>PROVIDES SLIGHT PUSH UP | OPEN GUSSET</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade product-modal" id="smooth-02" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="smooth-carousel_2">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_2_1.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_2_2.jpg" title=""> </div>
+
+							</div>
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#smooth-carousel_2"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_2_1.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#smooth-carousel_2"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_2_2.jpg"> </li>
+
+				
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">Seamless Shaping Thong | Open Bust</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$19.99</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" 
+												data-image="img/shapperDoll/smootshapper_cat_4_2_1.jpg" 
+												data-name="Full Body Seamless Bodysuit" 
+												data-cost="19.99" 
+												data-id="2">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p>STRAPS ARE ADJUSTABLE AND DETACHABLE </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade product-modal" id="smooth-03" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="smooth-carousel_3">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_3_1.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_3_2.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_3_3.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_3_4.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_3_5.jpg" title=""> </div>
+							</div>
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#smooth-carousel_3"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_3_1.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#smooth-carousel_3"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_3_2.jpg"> </li>
+								<li class="" data-slide-to="2" data-target="#smooth-carousel_3"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_3_3.jpg"> </li>
+								<li class="" data-slide-to="3" data-target="#smooth-carousel_3"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_3_4.jpg"> </li>
+								<li class="" data-slide-to="4" data-target="#smooth-carousel_3"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_3_5.jpg"> </li>				
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">Slimming Level | High Targets Tummy</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$29.99</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" 
+												data-image="img/shapperDoll/smootshapper_cat_4_3_1.jpg" 
+												data-name="Slimming Level | High Targets Tummy" 
+												data-cost="29.99" 
+												data-id="2">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p>LOVE HANDLES AND BACK<br/> SILKY | SOFT, LIGHTWEIGHT, SEAMLESS FABRIC </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade product-modal" id="smooth-04" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="smooth-carousel_4">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_4_1.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_4_2.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_4_3.jpg" title=""> </div>
+								<div class="item"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_4_4.jpg" title=""> </div>
+							</div>
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#smooth-carousel_4"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_4_1.jpg"> </li>
+								<li class="" data-slide-to="1" data-target="#smooth-carousel_4"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_4_2.jpg"> </li>
+								<li class="" data-slide-to="2" data-target="#smooth-carousel_4"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_4_3.jpg"> </li>
+								<li class="" data-slide-to="3" data-target="#smooth-carousel_4"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_4_4.jpg"> </li>
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">HIGH CONTROL WITH ALL DAY COMFORT</h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$34.99</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" 
+												data-image="img/shapperDoll/smootshapper_cat_4_4_1.jpg" 
+												data-name="HIGH CONTROL WITH ALL DAY COMFORT" 
+												data-cost="34.99" 
+												data-id="2">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p>STRAPS PROVIDE SUPPORT AND PUSH UP<br/> 3 HOOKS FOR YOUR CONVENIENCE </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade product-modal" id="smooth-05" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
+					<div class="modal-body">
+						<!-- Wrapper for slides -->
+						<div class="carousel slide product-slide" id="smooth-carousel_5">
+							<div class="carousel-inner cont-slider">
+								<div class="item active"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_5_1.jpg" title=""> </div>
+
+							</div>
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#smooth-carousel_5"> <img alt="" src="img/shapperDoll/smootshapper_cat_4_5_1.jpg"> </li>
+						
+							</ol>
+						</div>
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-push-2">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="pull-left nk section-heading">SLIMMING BODY SUIT </h3>
+										</div>
+										<div class="col-md-5">
+											<span class="product-right-section">
+												<span>$19.99</span>
+												<button 
+												class="btn btn-default add-item" 
+												type="button" 
+												data-image="img/shapperDoll/smootshapper_cat_4_5_1.jpg" 
+												data-name="SLIMMING BODY SUIT" 
+												data-cost="34.99" 
+												data-id="2">
+												add to cart </button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-md-push-2 product-description">
+									<p>ADJUSTABLE STRAPS AND HOOK CLOSURE</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--SMOOTH SHAPER-->
+
+
+
+		
+	</section>
+	<!--/ products area end -->	
+	
+	<!-- About area -->	
+	<section class="about white-color" id="returns">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					
+					<h2> <span>Return</span> Policy and <span>Shipping</span> policy</h2>
+					<h4>Return Policy</h4>
+					<ul>
+						<li>Not refund - only exchange</li>
+							<li>Before 15 days</li>
+								<li>No exceptions</li>
+									<li>No returns No exchange</li>
+										<li>In Girdles, shapers, lingerie or item on sale</li>
+
+										</ul>
+					<h4>Shipping Policy</h4>
+					<p>Please allow 2-5 business days after orders have been shipped for delivery.<br/>
+					Dollhouse and MakeUp Bar LLC is not liable for any products lost/stolen or any packages that have been market as delivery by the post office.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ About area end-->	
+		
+	<!-- Footer Section -->
+	<div class="section section-min">
+		<footer class="footer">
+		 <div class="container">
+			  <div class="row">
+
+				   <div class="col-md-4 col-sm-12">
+					   <div class="f_logo">
+						<a href="index.html"><img src="img/logo.png" alt="" /></a>
+						<p>The name says it all unique styles, budget paying always humble and always slaying.</p>
+					   </div>
+					   <div class="social">
+						<ul>
+							<li><a href="http://facebook.com/dollyourself" target="_blank"><span class="ti-facebook"></span></a></li>
+							<li><a href="https://www.instagram.com/dollhousenj/" target="_blank"><span class="ti-instagram"></span></a></li>
+							<li><a href="https://api.whatsapp.com/send?phone=17327840155&text=&source=&data=&app_absent=" target="_blank"><span class="ti-comments"></span></a></li>
+						</ul>
+					</div>
+				   </div>
+
+
+				   <div class="clearfix col-md-12 col-sm-12">
+					<ul>
+						<li><span class="ti-world"></span> 732-328-0376</li>
+					</ul>	
+					<hr>
+				   </div>
+
+				   <div class="col-md-12 col-sm-12">
+						<div class="footer-copyright">
+							 <p>All Rights Reserved.</p>
+						</div>
+				   </div>
+				   
+		 	   </div>
+		    </div>
+	    </footer>
+
+    </div>
+	
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="js/vendor/swiper.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/jquery.inview.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYNfZ-tL7Q_kGLMO4Y5xz4lCl70V74AF4"></script>
+	<script src="js/vendor/jquery.countdown.js"></script>
+	<script src="js/tt-cart.js"></script>
+	<script src="js/ajax-mail.js"></script>
+	<!-- <script src="js/contact.js"></script> -->
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
